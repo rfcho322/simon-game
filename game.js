@@ -45,11 +45,11 @@ function nextSequence() {
     playSound(randomChosenColour);
     
     //FOR TESTING ONLY
-    console.log("Current Game Pattern: " + gamePattern);
-    console.log("Current User Pattern: " + userClickedPattern);
-    console.log("Current Level " + level + " Color: " + randomChosenColour);
-    console.log("Current HighScores " + highScore);
-    console.log("score " + score);
+    // console.log("Current Game Pattern: " + gamePattern);
+    // console.log("Current User Pattern: " + userClickedPattern);
+    // console.log("Current Level " + level + " Color: " + randomChosenColour);
+    // console.log("Current HighScores " + highScore);
+    // console.log("score " + score);
 }
 
 function checkAnswer (currentLevel) {
