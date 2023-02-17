@@ -1,0 +1,232 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color: #011F3F;
+    height: 100vh;
+}
+p {
+    color: whitesmoke;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.header {
+    display: block;
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    margin: 2%;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 0.75rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.score {
+    font-size: 0.85rem;
+}
+
+.container__circle {
+    position: relative;
+    height: 260px;
+    width: 260px;
+    background-color: #161616;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 8px 8px 15px 5px #3d3c3c;
+}
+
+.btn, .btn-start {
+    height: 130px;
+    width: 130px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.green {
+    position: absolute;
+    background-color: #106f12;
+    border-radius: 130px 0 0 0;
+}
+.red {
+    position: absolute;
+    background-color: #6f1010;
+    border-radius: 0 130px 0 0;
+    right: 0;
+}
+.yellow {
+    position: absolute;
+    background-color: #c8a41d;
+    border-radius: 0 0 0 130px;
+    bottom: 0;
+}
+.blue {
+    position: absolute;
+    background-color: #17329c;
+    border-radius: 0 0 130px 0;
+    right: 0;
+    bottom: 0;
+}
+.container__inner-circle {
+    position: absolute;
+    background-color: #161616;
+    border-radius: 50%;
+    border-width: 10px;
+    top: 25%;
+    left: 25%;
+}
+.container__inner-circle-text {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 1.125rem;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.footer__author {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.70rem;
+}
+.footer__author > a {
+    text-decoration: none;
+    color: red;
+}
+
+/* BUTTON FLASHES */
+
+.green-flash {
+    background-color: #90ef92;
+}
+.red-flash {
+    background-color: #ef9090;
+}
+
+.yellow-flash {
+    background-color: #efdb90;
+}
+.blue-flash {
+    background-color: #90a3ef;
+}
+
+/* MEDIA QUERIES */
+
+ @media (min-width: 375px) {
+    .container__circle {
+        height: 320px;
+        width: 320px;
+    }
+    .btn, .btn-start {
+        height: 160px;
+        width: 160px;
+    }
+    .green {
+        border-radius: 160px 0 0 0;
+    }
+    .red {
+        border-radius: 0 160px 0 0;
+    }
+    .yellow {
+        border-radius: 0 0 0 160px;
+    }
+    .blue {
+        border-radius: 0 0 160px 0;
+    }
+    .container__inner-circle-text {
+        top: 25%;
+        left: 8%;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 425px) {
+    .row {
+        margin-top: 5%;
+    }
+    .container__circle {
+        height: 370px;
+        width: 370px;
+    }
+    .btn, .btn-start {
+        height: 185px;
+        width: 185px;
+    }
+    .green {
+        border-radius: 185px 0 0 0;
+    }
+    .red {
+        border-radius: 0 185px 0 0;
+    }
+    .yellow {
+        border-radius: 0 0 0 185px;
+    }
+    .blue {
+        border-radius: 0 0 185px 0;
+    }
+    .container__inner-circle-text {
+        top: 26%;
+        left: 8%;
+        font-size: 1.75rem;
+    }
+}
+@media (min-width: 768px) {
+    .row {
+        margin-top: -1%;
+    }
+    .header {
+        right: 0;
+        left: 0;
+    }
+    .container__circle {
+        height: 500px;
+        width: 500px;
+        border-width: 10px !important;
+        top: -15%;
+    }
+    .btn, .btn-start {
+        height: 250px;
+        width: 250px;
+        border-width: 10px !important;
+    }
+    .green {
+        border-radius: 250px 0 0 0;
+    }
+    .red {
+        border-radius: 0 250px 0 0;
+    }
+    .yellow {
+        border-radius: 0 0 0 250px;
+    }
+    .blue {
+        border-radius: 0 0 250px 0;
+    }
+    .container__inner-circle {
+        border-width: 20px !important;
+    }
+    .container__inner-circle-text {
+        top: 25%;
+        left: 8%;
+        font-size: 2.25rem;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Game</title>
+  <link rel="icon" href="images/simon-logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 id="level-title" class="header__title">Press "SIMON" button to Play</h1>
+      <p class="score">Score: <span id="display-score">0</span></p>
+      <p class="score">Highest: <span id="high-score">0</span></p>
+    </div>
+    <div class="row">
+      <div class="container__circle">
+        <div type="button" id="green" class="btn green"></div>
+        <div type="button" id="red" class="btn red"></div>
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+        <div class="btn-start container__inner-circle">
+          <p class="container__inner-circle-text">SIMON</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="footer__author"> Created with ❤️ by <a href="#"> rfcho322 </a></p>
+  </div>
+
+  <!-- REQUIRED SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
