@@ -1,8 +1,6 @@
 body,html {
     margin: 0;
-    padding: 10px;
     background-color: #011F3F;
-    height: 100vh;
 }
 p, h1, h2 {
     font-family: 'Press Start 2P', cursive;
@@ -23,6 +21,7 @@ p, h1, h2 {
 
 .header {
     margin: auto;
+    padding-block-start: 1.5rem;
     text-align: center;
     font-size: 1rem;
 }
@@ -35,6 +34,7 @@ p, h1, h2 {
 
 .sub-header {
     margin: auto;
+    padding-inline: 1.5rem;
 }
 
 .sub-header > h2{
