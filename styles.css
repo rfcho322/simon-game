@@ -119,6 +119,8 @@ p, h1, h2 {
 }
 
 .footer > p{
+    padding-block-start: 1.5rem;
+    padding-block-end: 1rem;
     text-align: center;
     font-size: 0.65rem !important;
 }
@@ -226,6 +228,6 @@ p, h1, h2 {
     }
     .footer {
         margin-top: 0;
-        padding-bottom: 15px;
+        padding-bottom: 0;
     }
 }
